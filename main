@@ -1,0 +1,29 @@
+#include <string> 
+ 
+#include "Movie.h" 
+ 
+using namespace std; 
+ 
+int main() 
+{ 
+ cout << "Testing the Movie class with an array:" << endl << endl; 
+ Movie m1("The Adjustment Bureau", "PG-13"); 
+ m1.addRating(5); 
+ m1.addRating(5); 
+ m1.addRating(4); 
+ m1.addRating(4); 
+ m1.addRating(5); 
+ cout << m1.getName() << "," << m1.getRating() << 
+  " Average rating: " << m1.getAverage() << endl << endl; 
+ 
+ Movie m2("I Am Number Four", "PG-13"); 
+ m2.addRating(3);
+m2.addRating(2); 
+m2.addRating(4); 
+m2.addRating(1); 
+cout << m2.getName() << "," << m2.getRating() << 
+" Average rating: " << m2.getAverage() << endl; 
+char c; 
+cin >> c; 
+return 1; 
+} 
